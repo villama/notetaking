@@ -7,6 +7,6 @@ To use, change the extension of the .zip file to .sublime-package, and place in 
 key characters:  
   //  
   /*  */  
-  *  
+  \*  
   ~  
   ˙   ˙ (key is entered with alt + H on Apple keyboard)  
