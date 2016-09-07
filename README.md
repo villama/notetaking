@@ -5,8 +5,8 @@ To use, change the extension of the .zip file to .sublime-package, and place in 
 (For Mac, Show Package Contents > Contents > MacOS > Packages)
 
 key characters:
-  //
-  /*  */
-  *
-  ~
-  ˙   ˙ (key is entered with alt + H on Apple keyboard)
+  //  
+  /*  */  
+  *  
+  ~  
+  ˙   ˙ (key is entered with alt + H on Apple keyboard)  
