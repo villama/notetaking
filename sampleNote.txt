@@ -16,7 +16,7 @@
 	~ combine
 	~ final testing
 
-- watch video on halting: ˙https://www.youtube.com/watch?v=QlhXUx7bwms˙
+- review halting: ˙https://www.youtube.com/watch?v=QlhXUx7bwms˙
 
 // the following list is minimized, but can be opened by clicking the arrow
 // on the left
