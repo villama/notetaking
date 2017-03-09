@@ -1,0 +1,63 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/3/syntax.html
+name: NoteTaking
+file_extensions:
+  - txt
+# Uses source.java to enable cmd+L and cmd+alt+L commenting
+scope: source.java
+contexts:
+  main:
+    # Comments begin with '//' and finish at the end of the line
+    - match: '//'
+      scope: punctuation.definition.comment
+      push: comment
+
+    # Multiline comments begin with '/*' and end with '*/'
+    - match: '/\*'
+      scope: punctuation.definition.comment
+      push: multiline_comment
+
+    # Flags begin with '*' and end with '˙'
+    - match: '\*'
+      scope: storage.modifier
+      push: flag
+
+    # Tilde lines are highlighted until the end of the line
+    - match: '~'
+      scope: entity.name.function
+      push: tilde
+
+    # 'Highlights' begin with '˙' and end with '˙'
+    - match: '˙'
+      scope: punctuation.definition.string.begin
+      push: highlight
+
+  comment:
+    - meta_scope: comment.line
+    - match: '\n'
+      pop: true
+
+  multiline_comment:
+    - meta_scope: comment.line
+    - match: '\*/'
+      pop: true
+
+  flag:
+    - meta_scope: storage.modifier
+    - match: '˙'
+      scope: storage.modifier
+      pop: true
+
+  tilde:
+    - meta_scope: entity.name.function
+    - match: '\n'
+      scope: entity.name.function
+      pop: true
+
+  highlight:
+    - meta_scope: string.quoted.double
+    - match: '˙'
+      scope: punctuation.definition.string.end
+      pop: true
+
