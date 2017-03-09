@@ -9,4 +9,4 @@ key characters:
     ~           ends with a new line
     ˙           ends with '˙' (key is entered with alt + H on OSX)
 
-![Example Photo]('Screen Shot.png')
+![Example Photo](https://raw.githubusercontent.com/jvillamayor/NoteTaking/master/Screen%20Shot.png)
