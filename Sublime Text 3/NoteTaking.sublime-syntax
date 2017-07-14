@@ -45,7 +45,7 @@ contexts:
 
   flag:
     - meta_scope: storage.modifier
-    - match: '˙'
+    - match: '˙|\n'
       scope: storage.modifier
       pop: true
 
