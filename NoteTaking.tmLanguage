@@ -18,37 +18,31 @@
 		</dict>
 
 		<dict>
-			<key>begin</key>
-			<string>~</string>
-			<key>end</key>
-			<string>•|\n</string>
+			<key>match</key>
+			<string>\s*((#).*$\n?)</string>
+			<key>name</key>
+			<string>comment.line.double-slash.NoteTaking</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>\s*((\*\*).*$\n?)</string>
+			<key>name</key>
+			<string>keyword</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>\s*((\*).*$\n?)</string>
 			<key>name</key>
 			<string>entity.name.function.NoteTaking</string>
 		</dict>
 
 		<dict>
-			<key>begin</key>
-			<string>˙</string>
-			<key>end</key>
-			<string>˙</string>
+			<key>match</key>
+			<string>\s*((~).*$\n?)</string>
 			<key>name</key>
 			<string>string.quoted.double.NoteTaking</string>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>/\*</string>
-			<key>end</key>
-			<string>\*/</string>
-			<key>name</key>
-			<string>comment.block.documentation.NoteTaking</string>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>\*</string>
-			<key>end</key>
-			<string>•|\n</string>
-			<key>name</key>
-			<string>keyword</string>
 		</dict>
 	</array>
 	<key>scopeName</key>

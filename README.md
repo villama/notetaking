@@ -1,12 +1,12 @@
 # NoteTaking
-Syntax highlighting for Sublime Text and TextMate, for taking readable notes.
+Syntax highlighting for Sublime Text and TextMate, for taking readable notes. All key characters highlight from the key character to the end of line.
 
 key characters:
 
-    //          ends with a new line
-    /*          ends with '*/'
-    *           ends with '•' (alt + 8 on OSX) or a new line
-    ~           ends with '•' (alt + 8 on OSX) or a new line
-    ˙           ends with '˙' (key is entered with alt + H on OSX)
+    //      comment
+    #       comment
+    ~       quoted
+    *       function
+    **      keyword
 
 ![Example Photo](https://raw.githubusercontent.com/jvillamayor/NoteTaking/master/Screen%20Shot.png)
